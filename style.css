@@ -1,0 +1,33 @@
+.color-palette {
+  border: black solid 1px;
+  width: 450px;
+  height: 50px;
+}
+
+.color {
+  border: black solid 1px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: #E23B2E;
+}
+
+#green {
+  background-color: #4FAF28;
+}
+
+#blue {
+  background-color: #357AE8;
+}
+
+h1 {
+  color: darkslategrey;
+  font-style: italic;
+}
