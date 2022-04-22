@@ -1,5 +1,9 @@
-.color-palette {
-  border: black solid 1px;
+h1 {
+  color: darkslategrey;
+  font-style: italic;
+}
+
+#color-palette {
   width: 450px;
   height: 50px;
 }
@@ -27,7 +31,24 @@
   background-color: #357AE8;
 }
 
-h1 {
-  color: darkslategrey;
-  font-style: italic;
+.coluna {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 2%;
+    padding: 2px;
 }
+
+.pixel {
+  border: rgb(47, 50, 48) solid 1px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: white;
+}
+
+
+
+
+
+
