@@ -1,23 +1,31 @@
-// Criamos uma linha de quadrados para cada container
-// let body = document.querySelector('body')
+const cores = document.querySelectorAll('.color');
+const preto = document.getElementById('black');
+const azul = document.getElementById('blue');
+const vermelho = document.getElementById('red');
+const verde = document.getElementById('green');
+let corAtual = document.getElementsByClassName('color selected')[0];
+corAtual = window.getComputedStyle(corAtual).backgroundColor;
+let grid = document.querySelectorAll('.pixel');
 
-// function criaContainer() {
-//     for (index = 0; index < 5; index++) {
-//         let cont = document.createElement('container')
-//         cont.classList.add('container')
-//         body.appendChild(cont);
-//     }
-// }
-// criaContainer()
 
-// let container = document.querySelector('.container')
+// Escutadores das cores selected
+preto.addEventListener('mousedown', Selected)
+azul.addEventListener('mousedown', Selected)
+vermelho.addEventListener('mousedown', Selected)
+verde.addEventListener('mousedown', Selected)
 
-// function criaLinha() {
-//     for (index = 0; index < 5; index++) {
-//         let div = document.createElement('div');
-//         div.classList.add('linha');
-//         container.appendChild(div);
-//     }
-// }
+// Remove o selected da cor anterior e adiciona à cor clicada
+function Selected() {
+    for (let i = 0; i < cores.length; i++) {
+        cores[i].classList.remove('selected')
+    }
+    event.target.classList.add('selected')
+    corAtual = window.getComputedStyle(event.target).backgroundColor
+}
 
-// criaLinha()
+// Escutadores do grid de pintura
+document.body.addEventListener('click', gridClicavel => {
+    if (event.target.classList.contains('pixel')) {
+        event.target.style.backgroundColor = corAtual
+    }
+})
