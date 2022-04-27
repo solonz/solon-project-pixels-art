@@ -5,7 +5,9 @@ const vermelho = document.getElementById('red');
 const verde = document.getElementById('green');
 let corAtual = document.getElementsByClassName('color selected')[0];
 corAtual = window.getComputedStyle(corAtual).backgroundColor;
-let grid = document.querySelectorAll('.pixel');
+
+let grid = document.querySelectorAll('.pixel')
+let reset = document.getElementById('clear-board');
 
 
 // Escutadores das cores selected
@@ -29,3 +31,10 @@ document.body.addEventListener('click', gridClicavel => {
         event.target.style.backgroundColor = corAtual
     }
 })
+
+reset.addEventListener('click', function () {
+    for(let j = 0; j < grid.length; j++) {
+        document.getElementsByClassName('pixel')[j].style.backgroundColor = '#ffffff'
+    }
+}
+)

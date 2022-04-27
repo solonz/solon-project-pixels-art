@@ -38,6 +38,7 @@ h1 {
   margin-top: 20px;
   align-items: center;
   justify-content: center;
+  border: #4FAF28 1px solid;
 }
 
 /* .coluna {
@@ -51,9 +52,16 @@ h1 {
   width: 40px;
   height: 40px;
   display: inline-block;
-  background-color: white;
+  background-color: #ffffff;
 }
 
-.selected {
-    
+#clear-board {
+height: 20px;
+width: 80px;
+border: #357AE8 1px solid;
+display:block;
+margin: 20px;
+font-weight: bold;
+box-shadow: 4px 4px 4px #999;
+text-align: center;
 }
