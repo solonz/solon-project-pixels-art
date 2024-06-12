@@ -1,3 +1,5 @@
+
+
 h1 {
   color: darkslategrey;
   font-style: italic;
@@ -35,10 +37,7 @@ h1 {
 #pixel-board {
   width: 240px;
   display: inline-block;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center;
-  border: #4FAF28 1px solid;
+  margin-top: 30px;
 }
 
 /* .coluna {
@@ -48,11 +47,13 @@ h1 {
 } */
 
 .pixel {
-  border: black solid 1px;
+  border: black 1px solid;
   width: 40px;
   height: 40px;
   display: inline-block;
   background-color: #ffffff;
+  margin: none;
+  padding: none;
 }
 
 #clear-board {
@@ -64,4 +65,12 @@ margin: 20px;
 font-weight: bold;
 box-shadow: 4px 4px 4px #999;
 text-align: center;
+}
+
+#qtdPixels {
+  display: block;
+  border: #357AE8 1px solid;
+  margin: 10px 20px auto;
+  width: 80px;
+  text-align: center;
 }
